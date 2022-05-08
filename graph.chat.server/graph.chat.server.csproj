@@ -6,4 +6,20 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="HotChocolate" Version="13.0.0-preview.19" />
+      <PackageReference Include="HotChocolate.AspNetCore" Version="13.0.0-preview.19" />
+      <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="13.0.0-preview.19" />
+      <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.0.0-preview.19" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0-preview.3.22178.4" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.0-preview.2.22153.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.3.22175.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.0-preview.3.22175.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\graph.chat.server.abstractions\graph.chat.server.abstractions.csproj" />
+      <ProjectReference Include="..\graph.chat.server.entities\graph.chat.server.entities.csproj" />
+    </ItemGroup>
+
 </Project>
