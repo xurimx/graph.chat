@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace graph.chat.server.Services;
 
-public class MessageService : IMessageService
+public class MessageService : IMessageService, IAsyncDisposable
 {
     private readonly ITopicEventSender _topicEventSender;
     private readonly ApplicationDbContext _context;
@@ -55,5 +55,10 @@ public class MessageService : IMessageService
         await _topicEventSender.SendAsync(topicId, message);
 
         return message;
+    }
+
+    public ValueTask DisposeAsync()
+    {
+        return _context.DisposeAsync();
     }
 }
