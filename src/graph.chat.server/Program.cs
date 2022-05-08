@@ -55,6 +55,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<ITopicService, TopicService>();
+builder.Services.AddScoped<IMessageService, MessageService>();
 
 builder.Services.AddGraphQLServer()
     .AddAuthorization()
@@ -79,4 +80,5 @@ app.UseEndpoints(endpoints =>
     endpoints.MapGraphQL();
 });
 
+app.SeedData();
 app.Run();

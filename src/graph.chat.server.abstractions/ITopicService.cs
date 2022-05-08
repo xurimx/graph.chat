@@ -6,7 +6,7 @@ public interface ITopicService
 {
     Task<List<Topic>> GetTopicsAsync(TopicType topicType);
 
-    Task<Topic> CreateTopic(TopicType topicType, List<Guid> participants);
+    Task<Topic> CreateTopicAsync(TopicType topicType, List<Guid> participants);
 
-    Task<Topic> JoinTopic(Guid topicId);
+    Task<Topic> JoinTopicAsync(Guid topicId);
 }
