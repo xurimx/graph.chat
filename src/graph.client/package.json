@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "graphql": "^16.4.0",
     "roboto-fontface": "*",
+    "subscriptions-transport-ws": "^0.11.0",
+    "villus": "^1.1.0",
     "vue": "^3.2.25",
     "vue-router": "^4.0.15",
     "vuetify": "^3.0.0-beta.0",

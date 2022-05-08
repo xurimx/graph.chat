@@ -65,8 +65,17 @@ builder.Services.AddGraphQLServer()
 
 builder.Services.AddInMemorySubscriptions();
 
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("all", cfg =>
+    {
+        cfg.AllowAnyOrigin();
+        cfg.AllowAnyMethod();
+        cfg.AllowAnyHeader();
+    });
+});
 var app = builder.Build();
-
+app.UseCors("all");
 app.UseRouting();
 
 app.UseAuthentication();
