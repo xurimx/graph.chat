@@ -11,6 +11,7 @@ public partial class Query
         Guid topicId) =>
         messageService.GetMessagesAsync(topicId);
 
+    [Authorize]
     public Task<Message> SendMessageAsync([Service] IMessageService messageService,
         Guid topicId, string content) =>
         messageService.SendMessage(topicId, content);
