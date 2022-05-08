@@ -2,11 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E8228576-FC0E-4A9C-ABD1-3DDD0B3FBF86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graph.chat.server", "graph.chat.server\graph.chat.server.csproj", "{74ED1DC6-D073-45F0-81C6-FCB4029E98C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graph.chat.server", "src\graph.chat.server\graph.chat.server.csproj", "{74ED1DC6-D073-45F0-81C6-FCB4029E98C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graph.chat.server.entities", "graph.chat.server.entities\graph.chat.server.entities.csproj", "{11588F1E-C49F-4DAA-B011-8A5E88352A44}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graph.chat.server.entities", "src\graph.chat.server.entities\graph.chat.server.entities.csproj", "{11588F1E-C49F-4DAA-B011-8A5E88352A44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graph.chat.server.abstractions", "graph.chat.server.abstractions\graph.chat.server.abstractions.csproj", "{79076281-DFDC-4617-AF7A-17BED14A2702}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graph.chat.server.abstractions", "src\graph.chat.server.abstractions\graph.chat.server.abstractions.csproj", "{79076281-DFDC-4617-AF7A-17BED14A2702}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
