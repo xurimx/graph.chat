@@ -30,7 +30,7 @@ public class MessageService : IMessageService, IAsyncDisposable
         var isParticipantInTopic = await _context.TopicMembers.AnyAsync(x => x.TopicId == topicId && x.UserId == _currentUserId);
         if (isParticipantInTopic)
             return await _context.Messages.Where(x => x.TopicId == topicId)
-                .OrderByDescending(x=> x.Timestamp)
+                //.OrderByDescending(x=> x.Timestamp)
                 .ToListAsync();
 
         return new List<Message>();
